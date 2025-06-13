@@ -81,24 +81,151 @@ switch (languages) {
 //   console.log(`Both ${num1} & ${num2} are equal`)
 // }
 
-// Take marks (0–100) and print:
+// Check if a number is divisible by 5 and 11.
 
-// A if marks ≥ 90
+// let num =55;
 
-// B if 80 ≤ marks < 90
+// if(num % 5 == 0 && num % 11 == 0){
+//   console.log(`${num} is completely divisible 5 & 11`)
+// }
+// else{
+//   console.log(`${num} is not completely divisible 5 & 11`)
+// }
 
-// C if 70 ≤ marks < 80
+// Check whether a character is a vowel or consonant.
 
-// D if 60 ≤ marks < 70
+// let char = "b";
 
-// F if marks < 60
+// if (
+//   char === "a" ||
+//   char === "e" ||
+//   char === "i" ||
+//   char === "o" ||
+//   char === "u"
+// ) {
+//   console.log(`Character ${char} is a vowel`);
+// } else {
+//   console.log(`Character ${char} is a consonent`);
+// }
 
+// Check if a year is a leap year or not.
 
+// let year = parseInt(prompt("Enter year: "))
+
+// if(year % 4 == 0){
+//   console.log(`Year ${year} is a leap year`)
+// }
+// else{
+//   console.log(`Year ${year} is not a leap year`)
+// }
+
+// Check if a character is uppercase or lowercase.
+
+// let char = prompt("Enter Character: ")
+
+// if(char >= "A" && char <= "Z"){
+//   console.log(`Character ${char} is in Upper case`)
+// }
+// else{
+//   console.log(`Character ${char} is in Lower case`)
+// }
 
 //Print numbers from 1 to 100 using a loop.
 
 // for(let i = 1; i <= 100; i++){
 //     console.log(i)
+// }
+
+// Find the largest among three numbers.
+
+// let a = 30;
+// let b = 10;
+// let c = 50;
+
+// if(a > b && a > c){
+//   console.log(`${a} is greater than ${b} & ${c}`)
+// }
+// else if(b > a && b > c){
+//   console.log(`${b} is greater than ${a} & ${c}`)
+// }
+// else{
+//   console.log(`${c} is greater than ${a} & ${b}`)
+// }
+
+// Check if a triangle is valid (sum of angles = 180).
+
+// let angle1 = parseFloat(prompt("Enter the value of first angle: "));
+// let angle2 = parseFloat(prompt("Enter the value of second angle: "));
+// let angle3 = parseFloat(prompt("Enter the value of third angle: "));
+
+// let sum = angle1 + angle2 + angle3;
+
+// if (sum === 180 && angle1 > 0 && angle2 > 0 && angle3 > 0) {
+//   console.log("Triangle is valid");
+// } else {
+//   console.log("Triangle is invalid");
+// }
+
+// Assign grade based on marks:
+// 90-100: A
+// 80-89: B
+// 70-79: C
+// 60-69: D
+// Below 60: F
+
+// let marks = parseFloat(prompt("Enter your marks: "))
+
+// if(marks >= 90 && marks <= 100){
+//   console.log("You got A grade")
+// }
+
+// else if(marks >= 80 && marks <= 89){
+//   console.log("You got B grade")
+// }
+
+// else if(marks >= 70 && marks <= 79){
+//   console.log("You got C grade")
+// }
+
+// else if(marks >= 60 && marks <= 69){
+//   console.log("You got D grade")
+// }
+// else{
+//   console.log("You are fail")
+// }
+
+// Check if a person is a child, teenager, adult, or senior (age-based categories).
+
+// let personAge = parseInt(prompt("Enter your age: "))
+
+// if(personAge < 12){
+//   console.log("You are child")
+// }
+// else if(personAge >= 13  && personAge <= 17){
+//   console.log("You are teenager")
+// }
+// else if(personAge >= 18 && personAge <= 60){
+//   console.log("You are an adult")
+// }
+// else{
+//   console.log("You are senior")
+// }
+
+// Check if a number is a multiple of 3 or 7 or both.
+
+// let num = 84;
+
+// if (num % 3 == 0 && num % 7 == 0){
+//   console.log(`${num} is divisible by 3 & 7 both`);
+// }
+// else if(num % 7 == 0){
+//   console.log(`${num} is divisible by 7`)
+// }
+// else if(num % 3 == 0){
+//     console.log(`${num} is divisible by 3`)
+// }
+// else{
+//   console.log(`${num} is not divisible by 3 or 7`)
 // }
 
 // Print the multiplication table of a number (e.g., input = 5 → 5, 10, ..., 50).
@@ -135,7 +262,3 @@ switch (languages) {
 // }
 
 // console.log(`Factorial of ${num} = ${factorial}`)
-
-
-
-
