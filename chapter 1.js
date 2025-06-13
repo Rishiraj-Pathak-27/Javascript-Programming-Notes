@@ -50,7 +50,7 @@
 
 // DATATYPES
 
-//primitive datatypes
+// primitive datatypes
 
 // let age = 19;  // int type
 // let fname = "Rishiraj Pathak"; // string type
@@ -72,7 +72,7 @@
 
 // non-primitive datatypes (generally stored in key:value pair.)
 
-//1. objects (generally declared by const variable.) 
+// 1. objects (generally declared by const variable.) 
 // const student = {
 //     fname : "Rishiraj Pathak",
 //     age: 19,
@@ -115,7 +115,7 @@
 
 // const employee = {
 //     emp_id : 3,
-//     emp_name : "Rishiraj Pathak",
+//     emp_name : "John Doe",
 //     emp_designation : "Developer",
 //     emp_salary : "15 - 20 LPA"
 // };
@@ -123,9 +123,9 @@
 // console.log(`The employee ${employee.emp_name} has employee id ${employee.emp_id} and designation as ${employee.emp_designation} with salary of ${employee.emp_salary}.`);
 
 // console.log(employee);
-// employee["emp_name"] = "Yash Deshkar";
+// employee["emp_name"] = "John Doe";
 // employee["emp_id"] = employee["emp_id"] + 2;
 // console.log(employee);
 
-/////////////////////////////////////////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////////////////////////////////////////
 

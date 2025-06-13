@@ -21,11 +21,11 @@ console.log(personAge);
 // First_name
 
 // eg.
-
+ var age = 20;
 if (true) {
-  var age = 20;
+ console.log(age)
 }
-console.log(age);
+
 
 // let 
 // can be reassigned many times

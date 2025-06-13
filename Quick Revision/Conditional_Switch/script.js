@@ -43,13 +43,56 @@ switch (languages) {
 
 // Write a program that takes a number and prints whether it is even or odd.
 
-let num = parseInt(prompt("Enter a number: "))
-if(num % 2 == 0) {
-  alert("Even")
-}
-else{
-  alert("Odd")
-}
+// let num = parseInt(prompt("Enter a number: "))
+
+// if(num % 2 == 0){
+//   console.log("Even no")
+// }
+// else{
+//   console.log("Odd no")
+// }
+
+// Take a number input and print whether it's positive, negative, or zero.
+
+// let num = parseInt(prompt("Enter a number: "))
+
+// if(num < 0){
+//   console.log("Negative number")
+// }
+// else if(num > 0){
+//   console.log("Positive number")
+// }
+// else{
+//   console.log("Zero")
+// }
+
+// Take two numbers and print which one is greater (or if they are equal).
+
+// let num1 = parseInt(prompt("Enter 1st number: "))
+// let num2 = parseInt(prompt("Enter 2nd number: "))
+
+// if(num1 > num2){
+//   console.log(`${num1} is greater than ${num2}`)
+// }
+// else if(num2 > num1){
+//   console.log(`${num2} is greater than ${num1}`)
+// }
+// else{
+//   console.log(`Both ${num1} & ${num2} are equal`)
+// }
+
+// Take marks (0–100) and print:
+
+// A if marks ≥ 90
+
+// B if 80 ≤ marks < 90
+
+// C if 70 ≤ marks < 80
+
+// D if 60 ≤ marks < 70
+
+// F if marks < 60
+
 
 
 //Print numbers from 1 to 100 using a loop.
@@ -92,4 +135,7 @@ else{
 // }
 
 // console.log(`Factorial of ${num} = ${factorial}`)
+
+
+
 

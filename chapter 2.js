@@ -1,16 +1,16 @@
 // Chapter 2 (Operators & Conditional Statements.)
 
 //single line comment
- //console.log("Hello World!");
- // this is a commented part.
+//console.log("Hello World!");
+// this is a commented part.
 
 //multi line comment
- /*console.log("Hello World!");
+/*console.log("Hello World!");
  this is a commented part.*/
 
- // OPERATORS
+// OPERATORS
 
- //1. Arithmatic Operators
+//1. Arithmatic Operators
 
 //  let a = 30;
 //  let b = 10;
@@ -23,16 +23,20 @@
 //  console.log("a ** b = ",a ** b);
 
 //  // Unary Operator
-//  let c = 10;
-//  console.log("c = ",c);
-// c++;
-//  console.log("c = ",c);
-// ++c;
-// console.log("c = ",c);
-// c--;
-// console.log("c = ",c);
-// --c;
-//  console.log("c = ",c);
+// let c = 10;
+// console.log("c = ", c);
+// c++;    // post-increment
+// console.log("c = ", c);
+// ++c;   // pre-increment
+// console.log("c = ", c);
+// c--;  // post-decrement
+// console.log("c = ", c);
+// --c;  // pre-decrement
+// console.log("c = ", c);
+// +c;  // converts string to a number
+// console.log("c = ", c);
+// -c;  // converts string to a number & negate it
+// console.log("c = ", c);
 
 
 //2. Assignment Operators.
@@ -87,7 +91,6 @@
 // console.log("cond1 || cond2: ", cond1 || cond2);
 
 // console.log("!(a<b) = ", !(a === b));
-
 
 // Conditional Statements
 
@@ -193,8 +196,7 @@
 //     console.log(d, "is greater");
 // }
 
-
-// age 
+// age
 
 // let age = 19;
 
@@ -210,7 +212,6 @@
 // else{
 //     console.log("Dead Person.");
 // }
-
 
 // various color modes
 
@@ -236,16 +237,16 @@
 
 // 4. Ternary Operators
 
-// syntax --> condition ? "true output" : "false output"; 
+// syntax --> condition ? "true output" : "false output";
 
-//examples  
+//examples
 
 // modes
 
 // let mode = "dark";
 // let color;
 // mode === "dark" ? color = "black" : color = "white";
-// console.log(color); 
+// console.log(color);
 
 // age factor
 

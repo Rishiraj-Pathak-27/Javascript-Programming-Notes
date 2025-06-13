@@ -10,7 +10,7 @@ console.log(num1 + num2);
 // Strings -> always return the result as characters in double or single quotes
 
 let firstName = "John";
-let lastName = "Doe";
+let lastName = 'Doe';
 
 console.log(firstName + " " + lastName);
 
@@ -89,7 +89,7 @@ console.log("1" + 11); // as + operater in JS is used for concatenation
 console.log("1" * 11);
 console.log("a" * 1);
 
-// typeof Operator in JS
+// typeof Operator in JS -> is a type of Unary Operator
 // typeof operator is used to return which type of the datatype is used in the variable assignment.
 
 let a = 10;
@@ -101,9 +101,15 @@ a = {
   lastName: "Doe",
 };
 console.log(typeof a);
-a = true
-console.log(typeof(a))
-a = undefined
-console.log(typeof(a))
-a = null
-console.log(typeof(a))
+a = true;
+console.log(typeof a);
+a = undefined;
+console.log(typeof a);
+a = null;
+console.log(typeof a);
+
+// Arithmetic Operators
+// Assignment Operators
+// Comparison operators
+// Unary Operators
+// Logical Operators
