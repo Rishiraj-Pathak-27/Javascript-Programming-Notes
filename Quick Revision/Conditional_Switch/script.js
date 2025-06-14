@@ -360,31 +360,45 @@ switch (languages) {
 // Find number of days in a given month (1-12) using switch.
 
 
-let month = prompt("Enter Month: ")
+// let month = prompt("Enter Month: ")
 
-switch(month) {
-  case 'January':
-  case 'March':
-  case 'May':
-  case 'July':
-  case 'August':
-  case 'October':
-  case 'December': {
-    console.log("This month has 31 days");
-  }
-  break;
+// switch(month) {
+//   case 'January':
+//   case 'March':
+//   case 'May':
+//   case 'July':
+//   case 'August':
+//   case 'October':
+//   case 'December': {
+//     console.log("This month has 31 days");
+//   }
+//   break;
 
-  case 'April':
-  case 'June':
-  case 'September':
-  case 'November': {
-    console.log("This month has 30 days");
-  }
-  break;
+//   case 'April':
+//   case 'June':
+//   case 'September':
+//   case 'November': {
+//     console.log("This month has 30 days");
+//   }
+//   break;
 
-  case 'February':{
-    console.log("This month has 28 days (29 days in every 4 years)");
-  }
-  break;
+//   case 'February':{
+//     console.log("This month has 28 days (29 days in every 4 years)");
+//   }
+//   break;
 
-}
+// }
+
+// Use nested if to check if a number is positive and even or positive and odd or negative.
+
+// let num = parseInt(prompt("Enter number: "));
+
+// if(num > 0 && num % 2 == 0){
+//   console.log(`The ${num} is Positive and even.`)
+// }
+// else if(num < 0){
+//   console.log(`The ${num} is negative.`)
+// }
+// else{
+//   console.log(`The ${num} is positive and odd.`)
+// }
