@@ -356,9 +356,7 @@ switch (languages) {
 //   alert("You have entered Wrong Username or Pass, Try Again!")
 // }
 
-
 // Find number of days in a given month (1-12) using switch.
-
 
 // let month = prompt("Enter Month: ")
 
@@ -402,3 +400,29 @@ switch (languages) {
 // else{
 //   console.log(`The ${num} is positive and odd.`)
 // }
+
+// Check if a string is empty.
+
+// let str = "John Doe"
+
+// if(str.length === 0){
+//   console.log("The String is empty")
+// }
+// else{
+//   console.log(`The string is not empty, string = ${str}`)
+// }
+
+// Check if a password is strong (length ≥ 8, has number, uppercase, and symbol).
+
+let password = (prompt("Enter Password: "));
+
+if (
+  password.length >= 8 &&
+  /[A-Z]/.test(password) &&
+  /[0-9]/.test(password) &&
+  /[!@#$%^&*(),.?":{}|<>]/.test(password)
+) {
+  console.log("✅ Strong Password");
+} else {
+  console.log("❌ Weak Password");
+}
