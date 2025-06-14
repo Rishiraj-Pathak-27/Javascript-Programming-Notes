@@ -262,3 +262,129 @@ switch (languages) {
 // }
 
 // console.log(`Factorial of ${num} = ${factorial}`)
+
+// Use switch to perform calculator operations (add, subtract, multiply, divide)
+
+// let num1 = parseInt(prompt("Enter first number: "));
+// let num2 = parseInt(prompt("Enter second number: "));
+// let operator = prompt("Enter the operator (+, -, *, /): ")
+
+// switch(operator) {
+//     case '+' : {
+//       console.log(`Addition of ${num1} & ${num2} is ${num1 + num2}`);
+//     }
+//     break;
+
+//     case '-' : {
+//       console.log(`Subtraction of ${num1} & ${num2} is ${num1 - num2}`);
+//     }
+//     break;
+
+//     case '*' : {
+//       console.log(`Multiplication of ${num1} & ${num2} is ${num1 * num2}`);
+//     }
+//     break;
+
+//     case '/' : {
+//       console.log(`Division of ${num1} & ${num2} is ${num1 / num2}`);
+//     }
+//     break;
+
+// }
+
+// Convert day number (1–7) to weekday name using switch.
+
+// let dayNumber = parseInt(prompt("Enter the day in number form (1-7): "));
+
+// switch (dayNumber) {
+//   case 1:
+//     {
+//       console.log(`${dayNumber} = Monday`);
+//     }
+//     break;
+//   case 2:
+//     {
+//       console.log(`${dayNumber} = Tuesday`);
+//     }
+//     break;
+//   case 3:
+//     {
+//       console.log(`${dayNumber} = Wednesday`);
+//     }
+//     break;
+//   case 4:
+//     {
+//       console.log(`${dayNumber} = Thursday`);
+//     }
+//     break;
+//   case 5:
+//     {
+//       console.log(`${dayNumber} = Friday`);
+//     }
+//     break;
+//   case 6:
+//     {
+//       console.log(`${dayNumber} = Saturday`);
+//     }
+//     break;
+//   case 7:
+//     {
+//       console.log(`${dayNumber} = Sunday`);
+//     }
+//     break;
+// }
+
+// Check if a string starts with a vowel and ends with a consonant.
+
+// let str = prompt("Enter the string: ").toLowerCase();
+
+// if ('aeiou'.includes(str[0]) && 'bcdfghjklmnpqrstvwxyz'.includes(str[str.length - 1])) {
+//   console.log(`The string "${str}" starts with a vowel and ends with a consonant.`);
+// } else {
+//   console.log(`The string "${str}" does not start with a vowel and end with a consonant.`);
+// }
+
+// Simple login system (check username and password).
+
+// let username = prompt("Enter Username: ");
+// let password = prompt("Enter Password: ");
+
+// if(username === "RishirajPathak" && password === "123456"){
+//   alert("Successfull.....")
+// }
+// else{
+//   alert("You have entered Wrong Username or Pass, Try Again!")
+// }
+
+
+// Find number of days in a given month (1-12) using switch.
+
+
+let month = prompt("Enter Month: ")
+
+switch(month) {
+  case 'January':
+  case 'March':
+  case 'May':
+  case 'July':
+  case 'August':
+  case 'October':
+  case 'December': {
+    console.log("This month has 31 days");
+  }
+  break;
+
+  case 'April':
+  case 'June':
+  case 'September':
+  case 'November': {
+    console.log("This month has 30 days");
+  }
+  break;
+
+  case 'February':{
+    console.log("This month has 28 days (29 days in every 4 years)");
+  }
+  break;
+
+}
