@@ -414,15 +414,17 @@ switch (languages) {
 
 // Check if a password is strong (length ≥ 8, has number, uppercase, and symbol).
 
-let password = (prompt("Enter Password: "));
+// let password = (prompt("Enter Password: "));
 
-if (
-  password.length >= 8 &&
-  /[A-Z]/.test(password) &&
-  /[0-9]/.test(password) &&
-  /[!@#$%^&*(),.?":{}|<>]/.test(password)
-) {
-  console.log("✅ Strong Password");
-} else {
-  console.log("❌ Weak Password");
-}
+// if (
+//   password.length >= 8 &&
+//   /[A-Z]/.test(password) &&
+//   /[0-9]/.test(password) &&
+//   /[!@#$%^&*(),.?":{}|<>]/.test(password)
+// ) {
+//   console.log("✅ Strong Password");
+// } else {
+//   console.log("❌ Weak Password");
+// }
+
+
