@@ -105,3 +105,37 @@
 //   console.log(i)
 //   i--;
 // }
+
+// Input a number and calculate its factorial using a loop.
+
+// let num = parseInt(prompt("Enter a number: "));   // 5
+// let fact = 1;
+
+// if (num < 0) {
+//   console.log("The factorial of negative number does not exist");
+// }
+// else {
+//   for(let i = 1; i <= num ; i++){
+//     fact = fact * i;   // fact = 1 x 2 = 2 x 3 = 6 x 4 = 24 x 5 = 120
+//   }
+//   console.log(`Factorial of ${num} = ${fact}`)
+// }
+
+// OR
+
+// let num = parseInt(prompt("Enter a number: ")); // 5
+// let fact = 1;
+
+// if (num < 0) {
+//   console.log("The factorial of negative number does not exist");
+// } else {
+//   let i = 1;
+//   while (i <= num) {
+//     fact = fact * i;
+//     i++;
+//   }
+//   console.log(`Factorial of ${num} = ${fact}`);
+// }
+
+
+
