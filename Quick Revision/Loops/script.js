@@ -5,60 +5,103 @@
 
 //Eg.
 // wrong practice to print name 10 times
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
-console.log("John Doe")
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
+// console.log("John Doe");
 
 // correct practice to print name 10 times
 
-for(let i = 1; i <= 10; i++){
-    console.log("John Doe")
-}
+// for (let i = 1; i <= 10; i++) {
+//   console.log("John Doe");
+// }
 
 // while loop -> it is used to execute a statement/block of code until the condition is met.
 // we use while loop when we do not know that how many times we have to execute the task/block of code.
 
-let ip = 0;
-let house = 40;
+// let ip = 0;
+// let house = 40;
 
-while(ip < house){
-    ip++;
-    console.log("Step Forwarded" + ip)
-}
+// while (ip < house) {
+//   ip++;
+//   console.log("Step Forwarded" + ip);
+// }
 
 // Do While loop
 // it is executed just as the while loop but it executes the statement/block of code first and then execute the condition
 
-let ip1 = 0;
-let house1 = 40;
-do{
-  ip1++;
-  console.log("Step Forwarded" + ip1)
-}
-while(ip1 < house1)
-
+// let ip1 = 0;
+// let house1 = 40;
+// do {
+//   ip1++;
+//   console.log("Step Forwarded" + ip1);
+// } while (ip1 < house1);
 
 // Guess the input Game
-let number = 60;
-let guessedNo;
 
-do{
-    guessedNo = parseInt(prompt("Enter a number: "))
-    if(guessedNo == number){
-      alert("Hurray! you won.")
-    break;    
-    }
-    else{
-       alert("Upps! you lost, guess the number again.")
-    }
-   guessedNo++;
-}
-while(guessedNo != 0)
+// let number = 60;
+// let guessedNumber;
 
+// do {
+//   guessedNumber = parseInt(prompt("Guess a number: "));
+//   if (guessedNumber === number) {
+//     alert("Hurray You won the game!");
+//     break;
+//   } else {
+//     alert("You Lost the game!, Retry");
+//   }
+// } while (guessedNumber != 0);
+
+/////////////////////////////////////////////////////
+// Practice Problems
+
+// Use a for loop to print numbers 1 to 10 in the console.
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(i);
+// }
+
+// Use a loop to calculate and print the sum from 1 to 100.
+
+// let sum = 0;
+// for (let i = 1; i <= 100; i++) {
+//   sum = sum + i;
+// }
+// console.log(`The sum form 1 to 100 = ${sum}`);
+
+// Print even numbers between 1 and 50.
+
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 2 == 0) {
+//     console.log(i);
+//   }
+// }
+
+// Print the multiplication table from 1 to 10 for 5.
+
+// let number = 5;
+
+// console.log("The multiplication table of 5 is: ");
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`${number} x ${i} = ${number * i}`);
+// }
+
+// Use a while or for loop to print in reverse.
+
+// for (let i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+
+// OR
+
+// let i = 10;
+// while(i > 0){
+//   console.log(i)
+//   i--;
+// }
