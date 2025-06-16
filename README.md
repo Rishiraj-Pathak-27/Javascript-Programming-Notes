@@ -1,8 +1,11 @@
-# 📘 JavaScript Programming Notes
+<p align="center">
+  <h1>📘 JavaScript Programming Notes</h1>
+</p>
 
 Welcome to **JavaScript Programming Notes** – a beginner-friendly and practical guide to learning JavaScript with real examples, practice files, and revision content. This repo is perfect for students, developers, or anyone looking to strengthen their JavaScript fundamentals 🚀
 
 ---
+
 
 ## 📂 Project Structure
 
