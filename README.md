@@ -68,9 +68,9 @@ Make sure you have [Visual Studio Code](https://code.visualstudio.com/) installe
 
 ---
 
-## ✏️ Handwritten Notes (Coming Soon)
+## ✏️ Handwritten Notes & OOPS Topic (Coming Soon)
 
-📝 Handwritten notes are currently **under development** and will be added soon to enhance your learning experience.
+📝 Handwritten notes & OOPS Topic are currently **under development** and will be added soon to enhance your learning experience.
 
 Stay tuned for more updates!
 
