@@ -49,9 +49,46 @@ sayHello();
 const add = (num1, num2) => {
   return num1 + num2;
 };
-console.log(add(5,10));
+console.log(add(5, 10));
 
 // OR
 
-const addTwo = (num1, num2) => num1 + num2;    // this will automatically return num1 + num2
-console.log(add(5,5));
+const addTwo = (num1, num2) => num1 + num2; // this will automatically return num1 + num2
+console.log(add(5, 5));
+
+const addThree = (...num) => {
+  let ans = 0;
+  for (let i = 0; i < num.length; i++) {
+    ans = ans + num[i];
+  }
+  return ans;
+};
+console.log(addThree(50, 50, 50, 50, 50, 50));
+
+// this keyword
+// this keyword used in an object can be used to access all the properties of it in a function.
+// const obj = {
+//   car : "mustang",
+//   engine : "5L V8",
+//   carMilage: function(dt,fc){
+//         console.log(`${this.car} has a mileage of ${dt/fc} kmpl`);
+//   }
+// }
+// obj.carMilage(10,1);
+
+// OR
+
+// using arrow functions
+
+const obj = {
+  carName: "Mustang",
+  engine: "5L V8",
+  carMileage: function (dt, fc) {
+    console.log(
+      `Mileage of an american muscled car "${this.carName}" has a mileage of "${
+        dt / fc
+      }" kmpl as it has a "${this.engine}" engine."`
+    );
+  },
+};
+obj.carMileage(5, 1);
