@@ -91,4 +91,4 @@ const obj = {
     );
   },
 };
-obj.carMileage(5, 1);
+obj.carMileage(10, 2);
