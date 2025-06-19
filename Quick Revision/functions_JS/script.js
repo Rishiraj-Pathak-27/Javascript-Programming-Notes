@@ -254,6 +254,7 @@ function_name();   // calling functions */
 // };
 // sayHi();
 
+//////////////////////////////////////////
 
 // High Order and Callback functions.
 // Hight order function takes the another function as a parameter/agrument inside the another function.
@@ -268,3 +269,62 @@ function_name();   // calling functions */
 // add(4, 5, function (val) {
 //   console.log(val);
 // });
+
+///////////////////////////////////////////
+
+// Practice Questions
+
+/*  function greet(name, callback) {
+   //Call the callback with a greeting message
+}
+greet("Rishi", function(message) {
+  console.log(message);
+}); */
+
+// function greet(name, callback){
+//   let result = `Hello ${name}!`;
+//   callback(result);
+// }
+
+// greet("Rishi", function (message) {
+//   console.log(message);
+// })
+
+
+/* function calculate(a, b, operation) {
+  // Call the passed operation callback with a and b
+}
+function add(x, y) {
+  return x + y;
+}
+console.log(calculate(5, 3, add)); // should return 8 */
+
+// function calculate(a,b,operation){
+//   return operation(a,b);
+// }
+
+// function add(x, y) {
+//   return x + y;
+// }
+
+// function sub(a, b) {
+//   return a - b;
+// }
+
+// function mul(a, b) {
+//   return a * b;
+// }
+
+// function div(a, b) {
+//   return a / b;
+// }
+
+// console.log(`Addition = ${calculate(10, 5, add)}`);
+// console.log(`Subtraction = ${calculate(10, 5, sub)}`);
+// console.log(`Multiplication = ${calculate(10, 5, mul)}`);
+// console.log(`Division = ${calculate(10, 5, div)}`);
+
+
+
+
+
