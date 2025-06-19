@@ -137,5 +137,43 @@
 //   console.log(`Factorial of ${num} = ${fact}`);
 // }
 
+// Sum of First N Natural Numbers
+
+// let numList = parseInt(prompt("Enter a number: "));
+// let sum = 0;
+// for (let i = 1; i <= numList; i++) {
+//   sum = sum + i;
+// }
+// console.log(`Addition of natural numbers = ${sum}`);
+
+
+// Print Even Numbers from 1 to 20
+
+// for(let i = 1; i <= 20; i++){
+//     if(i % 2 == 0){
+//         console.log(`Even numbers : ${i}`)
+//     }
+// }
+
+// let food = prompt("Enter your favourite food: ");
+
+// switch(food) {
+//     case 'burger' : {
+//          alert("Burger is so delicious");
+//     }
+//     break;
+//     case 'momos' : {
+//         alert("My Favourite food is Momos");
+//     }
+//     break;
+//     case 'pizza' : {
+//             alert("Pizza has a wonderful cheesy taste");
+//     }
+//    break;
+//     default : {
+//         alert("Pani-Puri is an Indian traditional starter dish");
+//     }
+// }
+
 
 
