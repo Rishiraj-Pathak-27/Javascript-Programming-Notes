@@ -136,7 +136,7 @@ function_name();   // calling functions */
 
 // function fact(num) {
 //   let factorial = 1
-//   if (num === 0 || num === 1) {
+//   if (num === 0 || num ===  1) {
 //     return 1;
 //   } else {
 //      return num * fact(num - 1);
