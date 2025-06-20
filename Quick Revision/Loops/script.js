@@ -176,4 +176,15 @@
 // }
 
 
+// let str = "12345";
+// let reversed = "";
+
+// // here i = 5 - 1 = 4; 4 >= 0 -> true(4--), 3 >= 0 -> true(3--), 2 >= 0 true(2--), 1 >= 0 -> true(1--), 0 >= 0 -> true(0--), -1 >= 0 -> false; 
+// for(let i = str.length - 1; i >= 0; i--){
+//     reversed = reversed + str[i];
+//     // 5[0] , 4[1], 3[2], 2[1], 1[0] = 54321
+// }
+// console.log(reversed);
+
+
 

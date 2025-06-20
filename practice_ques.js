@@ -19,10 +19,13 @@
 
 // 3. Reverse a String (Strings).
 
-// let str = prompt("Enter any String: ");
-// let reversed = "";
-// for(let i = str.length - 1; i >= 0; i--){
-//  reversed += str[i];
-// }
-// console.log("Reversed String: ", reversed);
+let str = "John Doe";
+let reversed = "";
+for(let i = str.length - 1; i >= 0; i--){
+ reversed += str[i];
+}
+console.log("Reversed String: ", reversed);
+
+
+
 
