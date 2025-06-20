@@ -12,27 +12,44 @@ Welcome to **JavaScript Programming Notes** – a beginner-friendly and practica
 
 Javascript-Programming-Notes/
 ├── .vscode/
-├── chapter\_1/
-│   ├── chapter1.md
+├── chapter1.md
 │   ├── index.html
 │   └── script.js
-│   ├── chapter2.md
+├── chapter2.md
 │   ├── index.html
 │   └── script.js
-│   ├── chapter3.md
+├── chapter3.md
 │   ├── index.html
 │   └── script.js
-│   ├── chapter4.md
+├── chapter4.md
 │   ├── index.html
 │   └── script.js
-│   ├── chapter5.md
+├── chapter5.md
 │   ├── index.html
 │   └── script.js
 ├── Quick Revision/
-├── basic\_html.html
-├── ES6\_html.html
-├── practice ques.html
-├── practice ques.js
+│   ├── Introdcton.md
+│       ├── index.html
+│       └── script.js
+│   ├── Datatypes.md
+│       ├── index.html
+│       └── script.js
+│   ├── Loops.md
+│       ├── index.html
+│       └── script.js
+│   ├── Variables.md
+│       ├── index.html
+│       └── script.js
+│   ├── Conditional_Switch.md
+│       ├── index.html
+│       └── script.js
+│   ├── functions_JS.md
+│       ├── index.html
+│       └── script.js
+├── basic_html.html
+├── ES6_html.html
+├── practice_ques.html
+├── practice_ques.js
 └── script.js
 
 ````
