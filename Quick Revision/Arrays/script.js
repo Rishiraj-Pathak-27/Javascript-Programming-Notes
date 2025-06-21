@@ -58,7 +58,7 @@
 // High order function in array
 
 // 1. forEach() function -> use to iterate over every value, index or array of array and print them one by one.
-
+// forEach() method do not return a new array, it results undefined.
 //Eg.
 
 // const subjects = [
@@ -128,14 +128,36 @@ You can't use forEach directly to return a new array (like map), but you can pus
 
 // words.forEach((val, idx) => {
 //   if (idx === 0) {
-//     sentence = sentence + val;
+//     sentence += val;
 //   } else {
 //     sentence = sentence + " " + val;
 //   }
 // });
 // console.log(sentence);
 
+////////////////////////////////////////////////
 
+// .map() function in JS
+// .map() method work very similar to the .forEach() method but the .map() method is used to return a new array as an output.
 
+// .forEach() vs .map()
 
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
+// function double(num) {
+//   return num * 2;
+// }
+
+// let newArr = numbers.forEach(double);
+// console.log(newArr);
+
+// here if we use the .forEach() methods then it will return the result as undefined, bcoz we cannot create a new array using forEach().
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// function double(num) {
+//   return num * 2;
+// }
+
+// let newArr = numbers.map(double);
+// console.log(newArr);
