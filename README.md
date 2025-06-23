@@ -81,7 +81,7 @@ cd Javascript-Programming-Notes
 code .
 ```
 
-Make sure you have [Visual Studio Code](https://code.visualstudio.com/) installed.
+Make sure you have [Javascript IDE Preinstalled.](https://code.visualstudio.com/)
 
 ---
 
