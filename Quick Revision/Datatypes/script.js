@@ -67,6 +67,19 @@ let result3 = numOne * numTwo;
 let result4 = numOne / numTwo;
 console.log(result1, result2, result3, result4);
 
+// WAP to print the marks of the students in an object using for loop { harry: 98, rishi: 95, mohan:90}
+
+const studentMarks = {
+  "Jonh" : 80,
+  "Bill" : 95,
+  "Jane" : 75,
+  "Alexa" : 98,
+}
+
+for(let i in studentMarks){
+  console.log(`Marks of ${i} = ${studentMarks[i]}`);
+}
+
 // Playing with Booleans
 // In JS we treat true -> 1 & false -> 0
 

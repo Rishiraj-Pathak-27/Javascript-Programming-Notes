@@ -58,6 +58,46 @@
 //   }
 // } while (guessedNumber != 0);
 
+// for in loop => use to iterate over the keys of the object.
+// Eg.
+
+// let students = { alice: 85, bob: 92, charlie: 88 };
+
+// for (let i in students) {
+//   console.log(`${i} scored ${students[i]}`);
+// }
+
+// Eg.
+
+// let marks = { ram: 78, shyam: 82, geeta: 95, sita: 89 };
+
+// let topper = '';
+// let highestMarks = 0;
+
+// for (let student in marks) {
+//   console.log(`${student} scored ${marks[student]}`);
+//    if(marks[student] > highestMarks){
+//     highestMarks = marks[student];
+//     topper = student;
+//    }  
+// }
+// console.log(`${topper} is topper & score = ${highestMarks}`);
+
+
+// Eg.
+
+let result = { anil: 91, sunil: 88, raj: 93, amit: 76 };
+
+let student = "";
+let resultAbove = 0;
+
+for(let students in result){
+    console.log(`${students} scored ${result[students]}`);
+    if(result[students] >= 90){
+      console.log(`${students} scored above 90 marks.`);
+    }
+}
+
 /////////////////////////////////////////////////////
 // Practice Problems
 
@@ -146,7 +186,6 @@
 // }
 // console.log(`Addition of natural numbers = ${sum}`);
 
-
 // Print Even Numbers from 1 to 20
 
 // for(let i = 1; i <= 20; i++){
@@ -175,11 +214,10 @@
 //     }
 // }
 
-
 // let str = "12345";
 // let reversed = "";
 
-// // here i = 5 - 1 = 4; 4 >= 0 -> true(4--), 3 >= 0 -> true(3--), 2 >= 0 true(2--), 1 >= 0 -> true(1--), 0 >= 0 -> true(0--), -1 >= 0 -> false; 
+// // here i = 5 - 1 = 4; 4 >= 0 -> true(4--), 3 >= 0 -> true(3--), 2 >= 0 true(2--), 1 >= 0 -> true(1--), 0 >= 0 -> true(0--), -1 >= 0 -> false;
 // for(let i = str.length - 1; i >= 0; i--){
 //     reversed = reversed + str[i];
 //     // 5[0] , 4[1], 3[2], 2[1], 1[0] = 54321
