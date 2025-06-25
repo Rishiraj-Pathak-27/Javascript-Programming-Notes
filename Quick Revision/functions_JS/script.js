@@ -266,8 +266,8 @@ function_name();   // calling functions */
 //   cb(result);
 // }
 
-// add(4, 5, function (val) {
-//   console.log(val);
+// add(4, 5, (val) => {
+//   console.log(val ** 2);
 // });
 
 ///////////////////////////////////////////
@@ -277,7 +277,7 @@ function_name();   // calling functions */
 /*  function greet(name, callback) {
    //Call the callback with a greeting message
 }
-greet("Rishi", function(message) {
+greet("John", function(message) {
   console.log(message);
 }); */
 
@@ -286,8 +286,8 @@ greet("Rishi", function(message) {
 //   callback(result);
 // }
 
-// greet("Rishi", function (message) {
-//   console.log(message);
+// greet("John", (val) => {
+//   console.log(val);
 // })
 
 
