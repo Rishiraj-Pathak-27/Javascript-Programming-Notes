@@ -96,6 +96,8 @@ for(let students in result){
     if(result[students] >= 90){
       console.log(`${students} scored above 90 marks.`);
     }
+
+   
 }
 
 /////////////////////////////////////////////////////
