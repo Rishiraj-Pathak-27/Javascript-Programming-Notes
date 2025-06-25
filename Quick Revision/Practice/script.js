@@ -415,6 +415,130 @@
 // }
 // userName.fullName();
 
+// Write a function calculate(a, b, operation) where operation is a callback that performs addition, subtraction, etc.
+
+// function calculate(a, b, operation) {
+//   let result;
+//   switch (operation) {
+//     case '+':
+//       {
+//         result = a + b;
+//       }
+//       break;
+
+//     case '-':
+//       {
+//         result = a - b;
+//       }
+//       break;
+
+//     case '*':
+//       {
+//         result = a * b;
+//       }
+//       break;
+
+//     case '/':
+//       {
+//         result = a / b;
+//       }
+//       break;
+
+//     default: {
+//       result = "Invalid Operation!";
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(`Addition = ${calculate(10, 5, "+")}`);
+// console.log(`Subtraction = ${calculate(10, 5, "-")}`);
+// console.log(`Multiplication = ${calculate(10, 5, "*")}`);
+// console.log(`Division = ${calculate(10, 5, "/")}`);
+
+// Use a callback to display the result of a multiplication after 2 seconds using setTimeout.
+
+// function calculate(a, b, operation, callback) {
+
+//   switch (operation) {
+//     case '+':
+//       {
+//         callback(a + b);
+//       }
+//       break;
+
+//     case '-':
+//       {
+//         callback(a - b);
+//       }
+//       break;
+
+//     case '*':
+//       {
+//         setTimeout(() => {
+//             callback(a * b);
+//         }, 2000);
+
+//       }
+//       break;
+
+//     case '/':
+//       {
+//         callback(a / b);
+//       }
+//       break;
+
+//     default: {
+//        callback("Invalid Operation!");
+//     }
+//   }
+
+// }
+
+// calculate(10, 5, "+", (result) => console.log(`Addition = ${result}`));
+// calculate(10, 5, "-", (result) => console.log(`Subtraction = ${result}`));
+// calculate(10, 5, "*", (result) => console.log(`Multiplication = ${result}`));
+// calculate(10, 5, "/", (result) => console.log(`Division = ${result}`));
+
+// Print a right-angled triangle pattern using stars *.
+
+// for(let i = 1; i <=4; i++){
+//   let lines = "";
+//   for(let j = 1; j <= i; j++){
+//     lines += '*';
+//   }
+//   console.log(lines);
+// }
+
+//Reverse a given string using a loop.
+
+// let str = "John Doe";
+// let reversed = '';
+
+// for(let i = str.length - 1; i >= 0; i--){
+//   reversed = reversed + str[i];
+// }
+// console.log(reversed);
+
+// Write a function that returns the largest number in an array.
+
+// function largestNo(arr) {
+//   if (arr.length === 0) {
+//     return undefined;
+//   }
+
+//   let max = arr[0];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       max = arr[i];
+//     }
+//   }
+//   return max;
+// }
+
+// const arr = [54, 32, 79, 87, 39, 89];
+// console.log(`${arr} = ${largestNo(arr)}`);
 
 
 
