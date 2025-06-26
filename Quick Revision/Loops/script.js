@@ -79,26 +79,41 @@
 //    if(marks[student] > highestMarks){
 //     highestMarks = marks[student];
 //     topper = student;
-//    }  
+//    }
 // }
 // console.log(`${topper} is topper & score = ${highestMarks}`);
 
-
 // Eg.
 
-let result = { anil: 91, sunil: 88, raj: 93, amit: 76 };
+// let result = { anil: 91, sunil: 88, raj: 93, amit: 76 };
 
-let student = "";
-let resultAbove = 0;
+// let student = "";
+// let resultAbove = 0;
 
-for(let students in result){
-    console.log(`${students} scored ${result[students]}`);
-    if(result[students] >= 90){
-      console.log(`${students} scored above 90 marks.`);
-    }
+// for (let students in result) {
+//   console.log(`${students} scored ${result[students]}`);
+//   if (result[students] >= 90) {
+//     console.log(`${students} scored above 90 marks.`);
+//   }
+// }
 
-   
-}
+// for...of loop
+// for...of loop in JS is used to iterate over the iteratable items wheather they are in the form of array, string, array of objects etc...
+// Eg.
+
+// const personDetails = [
+//   { name: "John", rollno: 27 },
+//   { name: "Bill", rollno: 68 },
+//   { name: "Jane", rollno: 67 },
+//   { name: "Alexa", rollno: 49 },
+// ];
+
+// let count = 0;
+// for (let details of personDetails) {
+//   console.log(`Name = ${details.name} & Roll no = ${details.rollno}`);
+//   count++;
+// }
+// console.log(`The total no of names & rollno  = ${count}`);
 
 /////////////////////////////////////////////////////
 // Practice Problems

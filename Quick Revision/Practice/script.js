@@ -540,7 +540,29 @@
 // const arr = [54, 32, 79, 87, 39, 89];
 // console.log(`${arr} = ${largestNo(arr)}`);
 
+// Create a function greet(name, cb) that waits 2 seconds using setTimeout, then calls cb(name).
 
+// function greet(name, cb){
+//     setTimeout(() => {
+//         cb(name);
+//     },2000);
+
+// }
+// greet("John Doe" , (val) => {
+//     console.log(val);
+// })
+
+// Write a function wrap(fn) that returns a new function which logs "Calling function", calls the original fn, then logs "Function finished".
+
+// function wrap(fn) {
+//   return function () {
+//     console.log("Calling function.");
+//     fn();
+//     console.log("Function finished.");
+//   };
+// }
+
+// console.log(wrap());
 
 // Advanced Level
 
