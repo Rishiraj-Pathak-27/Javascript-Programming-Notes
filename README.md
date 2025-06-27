@@ -1,6 +1,6 @@
 <h1 align="center">📘 JavaScript Programming Notes</h1>
 
-Welcome to **JavaScript Programming Notes** – a beginner-friendly and practical guide to learning JavaScript with real examples, practice files, and revision content. This repo is perfect for students, developers, or anyone looking to strengthen their JavaScript fundamentals 🚀
+Welcome to **JavaScript Programming Notes** – a beginner-friendly and practical guide to learning Core JavaScript with real examples, practice files, and revision content. This repo is perfect for students, developers, or anyone looking to strengthen their JavaScript fundamentals 🚀
 
 ---
 
@@ -87,7 +87,7 @@ Make sure you have [Javascript IDE Preinstalled.](https://code.visualstudio.com/
 
 ## ✏️ Handwritten Notes & OOPS Topic (Coming Soon)
 
-📝 Handwritten notes & OOPS Topic are currently **under development** and will be added soon to enhance your learning experience.
+📝 Handwritten notes & More Topic are currently **under development** and will be added soon to enhance your learning experience.
 
 Stay tuned for more updates!
 
@@ -121,6 +121,9 @@ GitHub: [@Rishiraj-Pathak-27](https://github.com/Rishiraj-Pathak-27) <br><br><br
 
 
 Happy Coding! 💻✨
+
+           
+                    - Rishiraj U. Pathak
 
 ---
 
