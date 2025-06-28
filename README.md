@@ -46,6 +46,12 @@ Javascript-Programming-Notes/
 │   ├── functions_JS.md
 │       ├── index.html
 │       └── script.js
+├── Arrays.md
+│       ├── index.html
+│       └── script.js
+├── Pratice.md
+│       ├── index.html
+│       └── script.js
 ├── basic_html.html
 ├── ES6_html.html
 ├── practice_ques.html
