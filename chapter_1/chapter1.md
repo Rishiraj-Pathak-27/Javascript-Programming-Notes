@@ -1,408 +1,163 @@
 # JavaScript Notes
-*Date:* 13/06/2025  
 
 ## Chapter 1: Introduction to JavaScript
 
 JavaScript is a lightweight, interpreted programming language primarily known for adding interactivity and functionality to webpages.
 
 ### Key Features:
-- JavaScript is a web-based programming language
-- Used for both frontend and backend development (making it a full-stack language)
-- Can add functionality to webpage components (buttons, sliders, etc.)
-- Can connect to databases and make web browsers
-- Originally designed to run in web browsers using:
-  - V8 Engine (Chrome)
-  - SpiderMonkey (Firefox)
-- Latest version is ES6 (ECMAScript 2015)
+
+* JavaScript is a web-based programming language.
+* Used for both frontend and backend development (making it a full-stack language).
+* Can add functionality to webpage components (buttons, sliders, etc.).
+* Can connect to databases and make web browsers.
+* Originally designed to run in web browsers using:
+
+  * V8 Engine (Chrome)
+  * SpiderMonkey (Firefox)
+* Latest major update: ES6 (ECMAScript 2015)
 
 ---
 
 ## Variables in JavaScript
 
-A variable is a container that holds a value (which can be of any data type).
+A variable is a container that holds a value which can be of any data type.
 
 ### Variable Declaration Methods:
 
-#### 1. var
-- The oldest variable declaration method
-- *Syntax:*
+#### 1. `var`
 
-  ```javascript
+* Function-scoped, not block-scoped.
+* Can be re-declared and updated.
+* Hoisted to the top of their scope.
+* Becomes a property of the window object in browsers.
+* Considered legacy; prefer `let` or `const` in modern JavaScript.
 
-  var variableName = value;
+#### 2. `let`
 
-# JavaScript var Examples
+* Block-scoped (local to the block where declared).
+* Can be reassigned but not redeclared in the same scope.
+* Not attached to the window object.
 
-## Basic var Declaration
-javascript
+#### 3. `const`
 
-var message = "Hello World";
-
-console.log(message); // Output: "Hello World"
-
-
-## Re-declaration with var
-javascript
-
-var count = 10;
-
-var count = 20; // Allowed with var
-
-console.log(count); // Output: 20
-
-
-## Function Scope Example
-javascript
-
-function testVar() {
-
-  var x = 10;
-
-  if (true) {
-
-    var x = 20; // Same variable
-
-    console.log(x); // Output: 20
-
-  }
-
-  console.log(x); // Output: 20 (not block-scoped)
-
-}
-
-testVar();
-
-## Global Scope Example
-javascript
-
-var globalVar = "I'm global";
-
-function checkScope() {
-
-  console.log(globalVar); // Output: "I'm global"
-
-  globalVar = "Modified!";
-
-}
-
-checkScope();
-
-console.log(globalVar); // Output: "Modified!"
-
-
-## Key Characteristics of var:
-1. 🟡 Function-scoped (not block-scoped)
-2. 🟡 Can be re-declared and updated
-3. 🟡 Variables are hoisted (declaration moved to top)
-4. 🟡 Becomes property of window object (in browsers)
-5. 🟡 Considered legacy - prefer let/const in modern JS
-
+* Also block-scoped.
+* Cannot be reassigned or redeclared.
+* Must be initialized at the time of declaration.
 
 ---
 
-#### 2. let 
+## Data Types in JavaScript
 
-The let keyword declares block-scoped variables:
+### Primitive Data Types:
 
-javascript
+1. **Number**: Used for both integers and floating-point numbers.
+2. **String**: A sequence of characters, enclosed in single, double, or backtick quotes.
+3. **Boolean**: Represents logical entities - `true` or `false`.
+4. **undefined**: A variable that has been declared but not assigned a value.
+5. **null**: Represents an intentional absence of any object value.
 
-let age = 25;
+### Non-Primitive (Reference) Data Types:
 
+1. **Object**: A collection of key-value pairs.
+2. **Array**: A list-like structure to store multiple values.
+3. **Function**: A block of code designed to perform a task.
 
-### Characteristics:
-- 🔹 Always follows block scope (local scope)
-- 🔹 Can be reassigned but cannot be redeclared in the same scope
-- 🔹 Only accessible within its block scope
+### Type Conversion:
 
-### Example:
-javascript
-
-if (true) {
-
-  let age = 19;
-
-  console.log(age); // Output: 19
-
-  age = 20; // Reassignment allowed
-
-  console.log(age); // Output: 20
-
-}
-
-console.log(age); // Error: age is not defined
-
-
-To use globally:
-javascript
-
-let globalAge; // Declaration
-
-globalAge = 30; // Assignment
-
-
-## 3. const Declaration
-
-The const keyword declares constants:
-
-javascript
-
-const PI = 3.14;
-
-
-### Characteristics:
-- 🔹 Always follows block scope (local scope)
-- 🔹 Cannot be redeclared or reassigned after initialization
-- 🔹 Must be initialized during declaration
-
-### Example:
-javascript
-
-const carName = "Mustang";
-
-console.log(carName); // Output: "Mustang"
-
-carName = "Gwagon"; // Error: Assignment to constant variable
-
+* JavaScript allows dynamic type conversion.
+* `typeof` operator can be used to check variable types.
+* Template literals using backticks allow for expression embedding and multi-line strings.
 
 ---
 
+## JavaScript Data Types (Continued)
 
-# Data Types in JavaScript
+### Strings
 
-## Primitive Data Types
+* Can be created using single quotes, double quotes, or backticks.
+* Template literals (backticks) support variable interpolation.
 
-1. *Number*:
-   javascript
+### String Concatenation:
 
-   let num1 = 3.14;    // Float
+* Combines two or more strings.
+* Can use the `+` operator or template literals.
 
-   let num2 = 10;      // Integer
+### Booleans
 
-   // Note: JavaScript doesn't have native complex numbers
-   
+* Return only `true` or `false` values.
+* Commonly used in condition checking and logic control.
 
-2. *String* (text within quotes):
-   javascript
+### Null vs Undefined
 
-   let single = 'Single quotes';
+* `null` is explicitly assigned to represent "no value".
+* `undefined` means a variable has been declared but not assigned.
+* `typeof null` is an object (JavaScript bug).
 
-   let double = "Double quotes";
+### Objects
 
-   let backticks = `Template literals`;
-   
+* Hold structured data in key-value pairs.
+* Keys are strings, values can be any data type.
+* Access via dot notation or bracket notation.
 
-3. *Boolean* (true/false):
-   javascript
+### Key Differences Between Types:
 
-   let isActive = true;
+| Type      | Description                     |
+| --------- | ------------------------------- |
+| String    | Textual data                    |
+| Boolean   | Logical values (`true`/`false`) |
+| Null      | Intentional empty value         |
+| Undefined | Declared but not assigned       |
+| Object    | Collection of properties        |
 
-   let isAdmin = false;
-   
+---
 
-4. *undefined* (uninitialized variable):
-   javascript
+## Typecasting in JavaScript
 
-   let x;
+Typecasting (also called type conversion) is the process of converting one data type to another.
 
-   console.log(x); // Output: undefined
-   
+### Types of Typecasting:
 
-5. *null* (intentional empty value):
-   javascript
+#### 1. Implicit Typecasting (Type Coercion)
 
-   let empty = null;
-   
+* Done automatically by JavaScript.
+* Example: Adding a string and number results in a string.
+* `"5" + 2` becomes `"52"` (number is converted to string).
 
-## Non-Primitive (Reference) Data Types
+#### 2. Explicit Typecasting
 
-1. *Object*:
-   javascript
+* Manually done using built-in functions.
 
-   let person = {
+### Examples:
 
-     name: "John",
+* **String to Number**:
 
-     age: 30
+  * `Number("123")` returns `123`
+* **Number to String**:
 
-   };
-   
+  * `String(456)` returns `"456"`
+* **Boolean to String**:
 
-2. *Array*:
-   javascript
+  * `String(true)` returns `"true"`
+* **String to Boolean**:
 
-   let colors = ["red", "green", "blue"];
-   
+  * `Boolean("hello")` returns `true`
+  * `Boolean("")` returns `false`
 
-3. *Function*:
-   javascript
+### Notes:
 
-   function greet() {
+* `parseInt()` is used to convert string to integer.
+* `parseFloat()` is used for converting to floating-point number.
+* `isNaN()` can be used to check if the value is Not-a-Number.
 
-     console.log("Hello!");
+---
 
-   }
-   
+### Additional Notes:
 
-## Type Conversion Examples
+* Use `===` for strict equality (checks type and value).
+* Use `typeof` to determine the type of a variable.
+* Objects can hold combinations of all other types.
+* Strings support a variety of methods and properties for manipulation.
 
-javascript
-
-// String to Number
-
-let str = "123";
-
-let num = Number(str);
-
-// Number to String
-
-let numValue = 456;
-
-let strValue = String(numValue);
-
-
-## Key Notes:
-- JavaScript is dynamically typed
-- Use typeof operator to check types
-- Template literals (backticks) allow string interpolation
-
-
-# JavaScript Data Types (Continued)
-
-## 1. Strings
-
-Strings represent textual data and can be declared in three ways:
-
-javascript
-
-let firstName = "John";  // Double quotes
-
-let lastName = 'Doe';   // Single quotes
-
-let greeting = `Hello ${firstName}`;  // Template literals (ES6)
-
-
-### Concatenation Examples:
-javascript
-
-console.log("Hello " + "World");  // Output: "Hello World"
-
-console.log("3" + "2");          // Output: "32" (string concatenation)
-
-console.log(3 + 2);              // Output: 5 (number addition)
-
-
-## 2. Booleans
-
-Return only true or false values:
-
-javascript
-
-let isLoggedIn = true;
-
-console.log(isLoggedIn);  // Output: true
-
-let hasPermission = false;
-
-console.log(hasPermission);  // Output: false
-
-
-## 3. Null
-
-Represents intentional absence of any object value:
-
-javascript
-
-let lastLoggedIn = null;
-
-console.log(lastLoggedIn);  // Output: null
-
-// Note: null is an assigned value meaning "no value"
-
-// typeof null returns "object" (historical JavaScript bug)
-
-
-## 4. Undefined
-
-Represents a variable that has been declared but not assigned:
-
-javascript
-
-let lastLoggedInDate;
-
-console.log(lastLoggedInDate);  // Output: undefined
-
-let activeUser = undefined;
-
-console.log(activeUser);  // Output: undefined
-
-
-## 5. Objects
-
-Collections of key-value pairs:
-
-javascript
-
-const empData = {
-
-  firstName: "John",
-
-  lastName: "Doe",
-
-  age: 30,
-
-  isAdmin: false,
-
-  lastLoggedIn: undefined,
-
-  department: null
-
-};
-
-console.log(empData);
-/* Output:
-{
-
-  firstName: "John",
-
-  lastName: "Doe",
-
-  age: 30,
-
-  isAdmin: false,
-
-  lastLoggedIn: undefined,
-
-  department: null
-
-}
-*/
-
-// Accessing properties
-
-console.log(empData.firstName);  // Output: "John"
-
-console.log(empData['lastName']); // Output: "Doe"
-
-
-## Key Differences:
-
-| Type       | Example             | Description                          |
-|------------|---------------------|--------------------------------------|
-| String     | "Hello"           | Textual data                         |
-| Boolean    | true/false      | Logical values                       |
-| Null       | null              | Intentional empty value              |
-| Undefined  | undefined         | Uninitialized variable               |
-| Object     | {key: value}      | Collection of properties             |
-
-## Additional Notes:
-- Use === for strict equality checks (includes type checking)
-- Template literals (backticks) allow multi-line strings and interpolation
-- null is an assignment value, while undefined means "not assigned"
-- Objects can contain any combination of data types <br><br><br>
+---
 
 Thank you for reading!
-
----
-
-
-

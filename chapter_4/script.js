@@ -1,4 +1,7 @@
 // ARRAYS
+// arrays in JS are used to store homogeneous data in linear way.
+// but we can also store the heterogeneous data inside the array which is not a suitable way.
+// arrays always return its type in the form of object bcoz as the object containe key:value pairs, the arrays also contains index:value pairs.
 
 // let cut_off = [98, 89, 78, 87, 90, 99, 92, 83];
 // console.log(cut_off);
@@ -112,7 +115,6 @@
 // let value = even_numbers.shift();
 // console.log(`The deleted value is ${value}`);
 
-
 // Practice Questions.
 
 // let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
@@ -125,4 +127,122 @@
 
 // push_element = companies.push("Amazon");
 
+/////////////////////////////////////////////////////////////////////////
 
+// Arrays
+
+// let studentMarks = [34, 76, 98, 89, 87];
+// console.log(studentMarks);
+// console.log(studentMarks.length); // property -> used to return something
+
+// const mobileBrands = ["samsung", "apple", "oppo", "vivo", "oneplus"];
+// console.log(mobileBrands);
+// console.log(mobileBrands.length);
+
+// accessing values from arrays using indices
+// console.log(studentMarks[1]);
+// console.log(mobileBrands[3]);
+// console.log(mobileBrands[5 - 1]); //oneplus
+// console.log(mobileBrands[9]); //undefined
+
+// updating/changing values of the arrays
+// mobileBrands[1] = "nothing";
+// mobileBrands[3] = "redmi";
+// console.log("Updated mobile brands = ", mobileBrands);
+
+// printing all the elements of an array (looping over array)
+
+let techCompanies = [
+  "Infosys",
+  "Google",
+  "Amazon",
+  "Microsoft",
+  "Capgemini",
+  "Tech Mahindra",
+];
+
+// using for loop
+
+// for(let i = 0; i < techCompanies.length; i++){
+//     console.log(techCompanies[i]);
+// }
+
+// using while loop
+
+// let i = 0
+// while(i < techCompanies.length){
+//     console.log(techCompanies[i]);
+//     i++;
+// }
+
+// using do...while loop
+
+// let i = 0;
+// do{
+//     console.log(techCompanies[i]);
+//     i++
+// }while(i < techCompanies.length);
+
+// using for...of loop
+
+// for(let company of techCompanies){
+//     console.log(company);
+// }
+
+// using for...in loop
+
+// for(let company in techCompanies){
+//     console.log(techCompanies[company]);
+// }
+
+// calculate sum and avg of student marks.
+
+// let studentMarks = [85, 97, 44, 37, 76, 60];
+// let markSum = 0;
+
+// for (let sum of studentMarks) {
+//   markSum += sum;
+// }
+// console.log(`Sum of student marks = ${markSum}`);
+// console.log(`Average of student marks = ${markSum / studentMarks.length}`);
+
+// let itemPrices = [250, 645, 300, 900, 50];
+// let sum = 0;
+// let newArrPrice = [];
+// let newArrDiscount = [];
+// for (let price of itemPrices) {
+//   let discount = price / 10;
+//   newArrDiscount.push(discount);
+//   let discountPrice = price - price / 10;
+//   newArrPrice.push(discountPrice);
+//   sum += discountPrice;
+// }
+// console.log(
+//   `10% discount on the original price comes out to be = [${newArrDiscount}]`
+// );
+// console.log(`Prices after 10% discount = [${newArrPrice}]`);
+// console.log(`Total sum of items after 10% discount = ${sum}`);
+
+// OR
+
+// let itemPrices = [250, 645, 300, 900, 50];
+
+// let i = 0;
+
+// for(let val of itemPrices){
+//     let offer = val - (val/10);  
+//     console.log(`Price after offer = ${offer}`);
+//     i += offer;
+// }
+// console.log("Total =",i);
+
+// OR
+
+// let itemPrices = [250, 645, 300, 900, 50];
+// let sum = 0;
+// for (let i = 0; i < itemPrices.length; i++) {
+//   let discountPrice = itemPrices[i] - (itemPrices[i] / 10);
+//   console.log(`Price after offer = ${discountPrice}`);
+//   sum += discountPrice;
+// }
+// console.log("Total =", sum);
