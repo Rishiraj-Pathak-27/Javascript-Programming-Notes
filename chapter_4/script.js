@@ -152,14 +152,14 @@
 
 // printing all the elements of an array (looping over array)
 
-let techCompanies = [
-  "Infosys",
-  "Google",
-  "Amazon",
-  "Microsoft",
-  "Capgemini",
-  "Tech Mahindra",
-];
+// let techCompanies = [
+//   "Infosys",
+//   "Google",
+//   "Amazon",
+//   "Microsoft",
+//   "Capgemini",
+//   "Tech Mahindra",
+// ];
 
 // using for loop
 
@@ -230,7 +230,7 @@ let techCompanies = [
 // let i = 0;
 
 // for(let val of itemPrices){
-//     let offer = val - (val/10);  
+//     let offer = val - (val/10);
 //     console.log(`Price after offer = ${offer}`);
 //     i += offer;
 // }
@@ -246,3 +246,43 @@ let techCompanies = [
 //   sum += discountPrice;
 // }
 // console.log("Total =", sum);
+
+// Array Methods
+
+// 1 push() = change the original array
+let bikes = ["bmw", "ninja", "suzuki", "yamaha", "royal enfield"];
+// bikes.push('harley davidson', 'triumph')
+// console.log(bikes);
+
+// 2 pop() = change the original array
+// let res = bikes.pop()
+// console.log(bikes);
+
+// 2 toString() = converts array into string
+
+// console.log(bikes.toString())
+
+// splice()
+
+// syntax => array_name.splice(startIdx, stopIdx, replaceItem)
+// bikes.splice(0, 3, 'ducati', 'bajaj');
+// console.log(bikes);
+
+
+
+// Practice Questions
+
+// let companies = ['Bloomberg', 'Microsoft', 'Uber', 'Google', 'IBM', 'Netflix'];
+
+// // remove 1st company
+// companies.shift();
+// // console.log(companies);
+// console.log(companies)
+// //remove Uber and add Ola instead of it
+
+// companies.splice(1,2,'Ola');
+// // console.log(companies);
+
+// // add amazon at the end
+// companies.push('Amazon')
+// console.log(companies)
