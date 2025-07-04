@@ -81,7 +81,7 @@ function_name();   // calling functions */
 // using arrow functions
 
 // const obj = {
-//   carName: "Mustang",
+//   carName: "Escalade",
 //   engine: "5L V8",
 //   carMileage: function (dt, fc) {
 //     console.log(
