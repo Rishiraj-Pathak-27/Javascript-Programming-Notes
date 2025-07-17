@@ -250,7 +250,7 @@
 // Array Methods
 
 // 1 push() = change the original array
-let bikes = ["bmw", "ninja", "suzuki", "yamaha", "royal enfield"];
+// let bikes = ["bmw", "ninja", "suzuki", "yamaha", "royal enfield"];
 // bikes.push('harley davidson', 'triumph')
 // console.log(bikes);
 

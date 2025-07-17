@@ -152,10 +152,116 @@ arr.forEach((val, idx, array) =>{
 //     console.log(val, idx);
 // })
 
-let num = [23, 43, 25, 67, 54];
+// let num = [23, 43, 25, 67, 54];
 
-let newArray = num.map((val) => {
-  return val * 2;
-});
+// let newArray = num.map((val) => {
+//   return val * 2;
+// });
 
-console.log(newArray);
+// console.log(newArray);
+
+////////////////////////////////////////////////////
+
+// Functions in JS
+
+// function in js is used to create a fixed block of code, used to do some task whenever it is invoked
+// function parameters are always treated as local variables and are always inside the block scope
+// syntax => function function_name(para1, para2, .... , paran){
+// block of code
+//}
+// function_name(args1, args2, ......argsn);
+
+// Eg.
+
+// function sayHello(msg){
+//  return msg;
+// }
+// console.log(sayHello('I love JS'));
+
+// OR
+
+// function sayHello(msg){
+//  console.log(msg);
+// }
+// sayHello("I love JS");
+
+// OR
+
+// function sayHello(){
+//   console.log("I love JS");
+// }
+// sayHello();
+
+// addition of 2 no.s
+
+// function add(num1,num2){
+//   return num1 + num2;
+// }
+// console.log(`Addition of two numbers = ${add(8,9)}`)
+
+// OR
+
+// function add(num1, num2){
+// console.log(`Addition of two numbers = ${num1 + num2}`);
+// }
+// add(5,10)
+
+// OR
+
+// function add(num1,num2){
+//   let sum = num1 + num2;
+//   return sum;
+// }
+// console.log(`${add(5,10)}`);
+
+// Arrow Functions
+
+/* syntax -> const function_name = (para1, para2, .... , paran) => {
+    // block of code
+} 
+function_name(args1, args2, ......argsn);  // function calling */
+
+// adding 2 numbers
+
+// const add = (num1, num2) => {
+//   return num1 + num2;
+// };
+// console.log(`Addition = ${add(8,9)}`);
+
+// multiplication of 2 numbers
+
+// const mul = (num1, num2) => {
+//    return num1 * num2;
+// }
+// console.log(`Multiplication = ${mul(5,10)}`);
+
+// const sayHello = () => {
+//     console.log("Hello World!");
+// }
+// sayHello();
+
+// Practice Questions
+
+// Create a function using 'function' keyword that takes a String as an argument & returns the number of vowel in a String.
+
+function vowel(str) {
+  let count = 0;
+  for (let char of str) {
+    if (
+      char === "a" ||
+      char === "e" ||
+      char === "i" ||
+      char === "o" ||
+      char === "u"
+    ) {
+      console.log("Vowels from the given string = ", char);
+      count++;
+    }
+  }
+  return count;
+}
+vowel("orange");
+console.log(
+  "The total number of vowels from the string came out to be = ",
+  count++;
+);
